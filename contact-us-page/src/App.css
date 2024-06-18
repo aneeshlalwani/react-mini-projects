@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-    
-}
-
 * {
     margin: 0;
 }
@@ -12,8 +8,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 .container{
+    
     margin: 0 auto;
-    max-width: 1280px;
+    
+    max-width: 1000px;
+    
 }
 nav{
     height: 72px;
@@ -32,14 +31,68 @@ a{
     text-decoration: none;
     color: black;
 }
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: end;
+    align-items: center;
+}
 .contact-section{
     text-transform: uppercase;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .contact-section h1{
     font-size: 48px;
     font-weight: 800;
-    /* text-transform: uppercase; */
+    /* max-width: 80%; */
 }
 .contact-section p {
     font-weight: 500;
+}
+.form-container{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+    align-items: end;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-form .top-btn{
+    display: flex;
+    gap: 32px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.form_control input{
+    height: 40px;
+    padding: 0 8px;
+}
+.form_control label{
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    background-color: #FFFFFF;
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.submit-btn{
+    display: flex;
+    justify-content: flex-end;
 }
